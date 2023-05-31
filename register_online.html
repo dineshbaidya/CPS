@@ -1,0 +1,970 @@
+<html>
+<head>
+<title>Calcutta Public School - Register</title>
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+table, tr ,td{
+//border:1px solid black;
+border-spacing:0px;
+}
+.center{
+margin-left:auto;
+margin-right:auto;
+}
+#left{
+background:url('images/extra.jpg');
+background-position:right top;
+height:350px;
+width:71px;
+font-size:10px;
+color:#f8ce48;
+font-weight:bold;
+top:0px;
+}
+#left a{
+text-decoration:none;
+font-size:10px;
+color:#f8ce48;
+font-weight:bold;
+font-family:Verdana, sans-serif;
+}
+#left a:hover{
+color:white;
+}
+#right{
+height:298px;
+width:380px;
+color:white;
+font-family:Verdana, sans-serif;
+font-size:13px;
+}
+.paragraph{
+padding-left:26px;
+padding-right:10px;
+margin-top:15px;
+}
+#top-img{
+width:774px;
+}
+#bottom{
+height:30px;
+background:url('images/bottom_img.jpg');
+}
+#bottom-text{
+font-family:Verdana, sans-serif;
+font-size:10px;
+padding-left:25px;
+font-weight:bold;
+margin-top:-3px;
+}
+#bottom-text a{
+text-decoration:none;
+color:#1e4fac;
+}
+#bottom-text a:hover{
+color:#0058ff;
+text-decoration:underline;
+}
+#heading{
+font-size:15px;
+color:#fcd049;
+font-weight:bold;
+padding-left:25px;
+padding-top:10px;
+}
+#logo{
+background:url('images/bg_watermark2.jpg');
+}
+hr{
+background: linear-gradient(to right,  #020854, #a9c3f6, #020854);
+height: 1px;
+width:30%;
+margin-left:10px;
+margin-top:2px;
+border:0px;
+}
+.lebel-name{
+padding-left:26px;
+padding-right:10px;
+margin-top:15px;
+}
+#name{
+width: 250px;
+margin-right: 40px;
+float: right;
+margin-top:-9px;
+}
+#class{
+height:23px;
+float: right;
+margin-right: 181px;
+}
+#year-select{
+height:23px;
+float: right;
+margin-right: 179px;
+padding-left:5px;
+}
+#class-studied{
+height:23px;
+float: right;
+width:117px;
+margin-right: 172px;
+padding-left:5px;
+}
+.year-lebel{
+margin-left:168px;
+position:absolute;
+padding-top:3px;
+}
+#dob-year-lebel{
+margin-left: 153px;
+margin-top: 0px;
+position: absolute;
+}
+#dob-year{
+margin-top:10px;
+position:absolute;
+margin-left:316px;
+margin-top:10px;
+}
+#dob{
+margin-top:30px;
+margin-bottom:30px;
+}
+#dob-year{
+margin-top: 17px;
+margin-left: -32px;
+}
+#dob-lable{
+margin-left:317px;
+padding-top:20px;
+position:absolute;
+}
+#dob-month{
+margin-right: -123px;
+float: right;
+margin-top: 19px;
+}
+#dob-month-select{
+margin-left:0px;
+margin-top:2px;
+}
+#dob-day{
+margin-left:317px;
+padding-top:20px;
+position:absolute;
+margin-left:518px;
+}
+#dob-day-select{
+margin-top:1px;
+}
+#academic-year{
+margin-top:20px;
+}
+#mother{
+margin-bottom:15px;
+}
+#birth-place-text{
+margin-top:20px;
+}
+#birth-place-input{
+margin-top: 24px;
+width: 250px;
+float: right;
+margin-right: 45px
+}
+#birth-place{
+width: 250px;
+margin-right: 40px;
+float: right;
+margin-top:-2px;
+}
+.input-feild{
+width: 250px;
+margin-right: 40px;
+float: right;
+margin-top:-2px;
+}
+.small-input{
+width: 162px;
+margin-right: 127px;
+float: right;
+margin-top:-2px;
+}
+#pincode{
+width: 115px;
+margin-right: 174px;
+}
+.textarea-table{
+width:100%;
+margin:auto;
+font-size:13px;
+}
+
+#father{
+margin-bottom:15px;
+}
+#payment-table{
+width: 92%;
+color: white;
+font-size: 13px;
+margin: auto;
+margin-top: 10;
+}
+.payment-td1{
+width:33%;
+margin-top:10px;
+}
+.payment-td2{
+width:33%;
+}
+.payment-td3{
+width:33%;
+}
+.input-td{
+padding-top:10px;
+padding-right:10px;
+}
+#btn-table{
+margin-left:auto:
+margin-right:auto;
+width:100%;
+text-align:center;
+margin-top:40px;
+margin-bottom:40px;
+padding-right:100px;
+padding-left:100px;
+}
+.btn{
+width:55px;
+}
+textarea{
+font-family:Verdana, sans-serif;
+font-size:12px;
+}
+#name{
+text-transform: uppercase;
+}
+.textarea2{
+margin-top:10px;
+}
+#birth-place, #father-name, #mother-name, #residental-address, #city, #state, #father-occupation, #ocupationOfficeAddress, #gurdian, #nationality, #LastSchoolAddress, #last-school-name{
+text-transform:capitalize;
+}
+.second-td{
+padding-left:1px;
+}
+.second-td textarea{
+margin-left:.21px;
+}
+.textarea-table td{
+//border:1px solid red;
+}
+.first-td{
+width: auto;
+padding-left: 26;
+}
+.second-td{
+width: 299px;
+}
+</style>
+</head>
+<body>
+<table class="center">
+<tr>
+<td colspan="2" id="top"> 
+<img src="images/top.jpg" id="top-img">
+</td>
+</tr>
+<tr>
+<tbody id="logo">
+<td id="left" valign="top">
+<p style="padding-left:25px; line-height:18px; padding-top:14px;">
+<a href="index.html">Home</a><br>
+<a href="vision.html">Vision</a><br>
+<a href="history.html">History</a><br>
+<a href="location.html">Location</a><br>
+<a href="organisation.html">Organisation</a><br>
+<a href="curriculum.html">Curriculum</a><br>
+<a href="school_uniform.html">School Uniform</a><br>
+<a href="teaching_staff.html">Teaching Staff</a><br>
+<a href="facilities.html">Facilities</a><br>
+<a href="activities.html">Activities</a><br>
+<a href="rules.html">Rules</a><br>
+<a href="register_online.html">Register online</a><br>
+<a href="photogallery.html">Photogallery</a><br>
+<a href="contact_us.html">Contact Us</a><br>
+<a href="site_map.html">Site Map</a><br>
+</p>
+</td>
+<td id="right" valign="top">
+<p id="heading">Register online</p><hr>
+<p class="paragraph">Instruction to fill in the form :</p>
+<p class="paragraph">Fill in the form and click the submit button to mail this page to us.<br>
+Click the Reset button to clear the content of the form.</p>
+
+<form action="#" name="registerOnline" id="registerOnline" method="post" onsubmit="return formValidation()">
+
+<p class="lebel-name">Name of the student<br>
+&nbsp;(Use Block Letters)
+<input type="text" id="name" name="name"></p>
+<p class="lebel-name">Admission to Class
+<select name="class" id="class">
+<option value="Lower-Nursery">Lower Nursery</option>
+<option value="Upper-Nursery">Upper Nursery</option>
+<option value="Transition">Transition</option>
+<option value="Class-I">Class I</option>
+<option value="Class-II">Class II</option>
+<option value="Class-III">Class III</option>
+<option value="Class-IV">Class IV</option>
+<option value="Class-V">Class V</option>
+<option value="Class-VI">Class VI</option>
+<option value="Class-VII">Class VII</option>
+<option value="Class-VIII">Class VIII</option>
+<option value="IX">IX</option>
+<option value="Xi-Arts">Xi-Arts</option>
+<option value="Xi-Science">Xi-Science</option>
+<option value="Xi-Commerce">Xi-Commerce</option>
+</select>
+</p>
+<p class="lebel-name" id="academic-year">For Academic Year
+<label for="year" class="year-lebel"><b>March</b></label>
+<select name="year" id="year-select">
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+</select>
+</p>
+<label for="dob-year" id="dob-lable"><b>Year</b>
+<select name="dob-year" id="dob-year" style="padding-left:3px; padding-right:3px;">
+<option value="1980">1980</option>
+<option value="1981">1981</option>
+<option value="1982">1982</option>
+<option value="1983">1983</option>
+<option value="1984">1984</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+</select>
+</label>
+<label for="dob-month" id="dob-month"><b>Month</b><br>
+<select name="dob-month" id="dob-month-select" style="padding-left:3px; padding-right:3px;">
+<option value="January">January</option>
+<option value="February">February</option>
+<option value="March">March</option>
+<option value="April">April</option>
+<option value="May">May</option>
+<option value="June">June</option>
+<option value="July">July</option>
+<option value="August">August</option>
+<option value="September">September</option>
+<option value="October">October</option>
+<option value="November">November</option>
+<option value="December">December</option>
+</select>
+</label>
+<label for="dob-day" id="dob-day"><b>Day</b><br>
+<select name="dob-day" id="dob-day-select">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+</label>
+<p class="lebel-name" id="dob">Select Date Of Birth
+</p>
+<p class="lebel-name">Place Of Birth
+<input type="text" id="birth-place" name="birth-place"></p>
+<p class="lebel-name">Father's Full Name
+<input type="text" class="input-feild" id="father-name" name="father-name"></p>
+<p class="lebel-name" id="mother">Mother's Full Name
+<input type="text" class="input-feild" id="mother-name" name="mother-name"></p>
+<table class="textarea-table">
+<tr>
+<td style="color:white;" class="first-td">Residence Address</td>
+<td class="second-td">
+<textarea class="textarea text-area-problem" id="residental-address" name="residental-address" rows="3" cols="20"></textarea>
+</td>
+</tr>
+</table>
+<p class="lebel-name">City
+<input type="text" class="small-input" id="city" name="city"></p>
+<p class="lebel-name">State
+<input type="text" class="small-input" id="state" name="state"></p>
+<p class="lebel-name">Pincode
+<input type="text" class="small-input" id="pincode" name="pincode"></p>
+<p class="lebel-name">Phone(R) (With STD Code)
+<input type="text" class="small-input" name="phone" id="phone"></p>
+<p class="lebel-name">E-mail
+<input type="text" class="small-input" id="email" name="email"></p>
+<p class="lebel-name">Father's Occupation
+<input type="text" class="small-input" id="father-occupation" name="father-occupation"></p>
+<table class="textarea-table">
+<tr>
+<td style="color:white;" class="first-td">Office Address</td>
+<td class="second-td">
+<textarea class="textarea2 text-area-problem" id="ocupationOfficeAddress" name="officeAdd" rows="3" cols="20"></textarea>
+</td>
+</tr>
+</table>
+<p class="lebel-name">Phone(O) (With STD Code)
+<input type="text" class="small-input" name="phone-o"></p>
+<p class="lebel-name">Local Guardian's Name
+<input type="text" class="small-input" name="gurdian" id="gurdian"></p>
+<p class="lebel-name">Nationality Of Parents
+<input type="text" class="small-input" id="nationality" name="nationality"></p>
+<p class="lebel-name">Name Of School Last Attended
+<input type="text" class="small-input" id="last-school-name" name="last-school-name"></p>
+<table class="textarea-table">
+<tr>
+<td style="color:white;" class="first-td">Address Of School Last Attended</td>
+<td class="second-td"> 
+<textarea class="textarea2 text-area-problem" name="LastSchoolAddress" id="LastSchoolAddress" rows="3" cols="20"></textarea>
+</td>
+</tr>
+</table>
+<p class="lebel-name" id="academic-year">Class Studied
+<select name="class" id="class-studied">
+<option value="Lower-Nursery">Lower Nursery</option>
+<option value="Upper-Nursery">Upper Nursery</option>
+<option value="Transition">Transition</option>
+<option value="Class-I">Class I</option>
+<option value="Class-II">Class II</option>
+<option value="Class-III">Class III</option>
+<option value="Class-IV">Class IV</option>
+<option value="Class-V">Class V</option>
+<option value="Class-VI">Class VI</option>
+<option value="Class-VII">Class VII</option>
+<option value="Class-VIII">Class VIII</option>
+<option value="IX">Class IX</option>
+<option value="X">Class X</option>
+<option value="Xi-Arts">Xi-Arts</option>
+<option value="Xi-Science">Xi-Science</option>
+<option value="Xi-Commerce">Xi-Commerce</option>
+</select>
+</p>
+<p class="lebel-name">Rank In Class
+<input type="text" class="small-input" class="small-input" name="class-rank" style="margin-top:4px;"></p>
+<p class="lebel-name">Payment Details</p>
+<table id="payment-table">
+<tr valign="top">
+<td class="payment-td1">
+
+<input onclick="document.getElementById('cash-amount').disabled = false; 
+
+document.getElementById('cheque-no').disabled = true;
+document.getElementById('cheque-date').disabled = true;
+document.getElementById('cheque-bank-name').disabled = true;
+document.getElementById('cheque-branch').disabled = true;
+document.getElementById('cheque-amount').disabled = true;
+
+document.getElementById('dd-no').disabled = true;
+document.getElementById('dd-date').disabled = true;
+document.getElementById('dd-bank-name').disabled = true;
+document.getElementById('dd-branch').disabled = true;
+document.getElementById('dd-amount').disabled = true;
+
+clearChequeDemand()"
+
+type="radio" name="payment" value="cash" 
+
+id="cash" checked>
+
+<span style="margin-left:5px; font-size:12px;">CASH</span>
+
+</td>
+
+<td class="payment-td2">
+
+<input onclick="document.getElementById('cash-amount').disabled = true; 
+
+document.getElementById('cheque-no').disabled = false;
+document.getElementById('cheque-date').disabled = false;
+document.getElementById('cheque-bank-name').disabled = false;
+document.getElementById('cheque-branch').disabled = false;
+document.getElementById('cheque-amount').disabled = false;
+
+document.getElementById('dd-no').disabled = true;
+document.getElementById('dd-date').disabled = true;
+document.getElementById('dd-bank-name').disabled = true;
+document.getElementById('dd-branch').disabled = true;
+document.getElementById('dd-amount').disabled = true;
+
+resetCashDemand();"
+
+type="radio" name="payment" value="cheque" id="cheque">
+
+<span style="margin-left:5px; font-size:12px;">CHEQUE</span>
+
+</td>
+
+<td class="payment-td3">
+
+<input onclick="document.getElementById('cash-amount').disabled = true; 
+
+document.getElementById('cheque-no').disabled = true;
+document.getElementById('cheque-date').disabled = true;
+document.getElementById('cheque-bank-name').disabled = true;
+document.getElementById('cheque-branch').disabled = true;
+document.getElementById('cheque-amount').disabled = true;
+
+document.getElementById('dd-no').disabled = false;
+document.getElementById('dd-date').disabled = false;
+document.getElementById('dd-bank-name').disabled = false;
+document.getElementById('dd-branch').disabled = false;
+document.getElementById('dd-amount').disabled = false;
+
+clearCashCheque()"
+
+type="radio" name="payment" value="demand" id="demand">
+
+<span style="margin-left:5px; font-size:12px;">DEMAND DRAFT</span>
+
+</td>
+</tr>
+<tr valign="top" id="second-tr">
+
+<td class="input-td">
+<p>AMOUNT 
+<input type="text" id="cash-amount" name="cash-ammount" style="width:70px; float:right;">
+</p>
+</td>
+
+<td class="input-td">
+<p>CHEQUE NO
+<input type="text" id="cheque-no" name="cheque-no" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+<p style="margin-top:10px;">CHEQUE DATE
+<input type="text" id="cheque-date" name="cheque-date" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+<p style="margin-top:10px;">BANK NAME
+<input type="text" id="cheque-bank-name" name="cheque-bank-name" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+<p style="margin-top:10px;">BRANCH
+<input type="text" id="cheque-branch" name="cheque-brach" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+<p style="margin-top:10px;">AMOUNT
+<input type="text" id="cheque-amount" name="cheque-amount" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+</td>
+<td class="input-td">
+
+<p>DD NO
+
+<input type="text" id="dd-no" name="dd-no" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+<p style="margin-top:10px;">DD DATE
+<input type="text" id="dd-date" name="dd-date" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+<p style="margin-top:10px;">BANK NAME
+<input type="text" id="dd-bank-name" name="dd-bank-name" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+<p style="margin-top:10px;">BRANCH
+<input type="text" id="dd-branch" name="dd-brach" disabled="disabled" style="width:70px; float:right;">
+</p>
+
+<p style="margin-top:10px;">AMOUNT
+<input type="text" id="dd-amount" name="dd-amount" disabled="disabled" style="width:70px; float:right;">
+</p>
+</td>
+</tr>
+</table>
+<p style="margin-left:26px; margin-top:10px; margin-right:40px;">
+I agree to the terms and rules as laid down in the prospectus, and I am prepared to leave the school a free hand in deciding which class the applicant is to join at CALCUTTA PUBLIC SCHOOL. I further agree to abide by the school regulations and programme and alteration made therein by the management. 
+</p>
+<p style="margin-left:26px; margin-top:10px; margin-right:40px;">
+Note: Application form to be filled in and sent online.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A DD of Rs 100 and two passport size photographs to be sent by post.<br>
+<b>DD should be in favor of CALCUTTA PUBLIC SCHOOL Payable at Kolkata.</b>
+</p>
+<table id="btn-table">
+<tr>
+<td id="button-td1"><input value="Submit" type="submit" class="btn"></td>
+<td id="button-td2"><input value="Reset" type="button" class="btn" onclick="clearForm()"></td>
+</tr>
+</table>
+</form>
+<script>
+
+//Clear Form
+
+let clearForm = ()=>{
+document.getElementById("registerOnline").reset();
+};
+
+//Clear Another Feild
+
+function resetCashDemand(){
+document.getElementById('dd-no').value='';
+document.getElementById('dd-date').value='';
+document.getElementById('dd-bank-name').value='';
+document.getElementById('dd-branch').value='';
+document.getElementById('dd-amount').value='';
+document.getElementById('cash-amount').value='';
+}
+function clearChequeDemand(){
+document.getElementById('cheque-no').value='';
+document.getElementById('cheque-date').value='';
+document.getElementById('cheque-bank-name').value='';
+document.getElementById('cheque-branch').value='';
+document.getElementById('cheque-amount').value='';
+
+document.getElementById('dd-no').value='';
+document.getElementById('dd-date').value='';
+document.getElementById('dd-bank-name').value='';
+document.getElementById('dd-branch').value='';
+document.getElementById('dd-amount').value='';
+}
+function clearCashCheque(){
+document.getElementById('cheque-no').value='';
+document.getElementById('cheque-date').value='';
+document.getElementById('cheque-bank-name').value='';
+document.getElementById('cheque-branch').value='';
+document.getElementById('cheque-amount').value='';
+
+document.getElementById('cash-amount').value='';
+}
+
+//Form Validation
+
+function formValidation(){
+  let name = document.getElementById("name");
+  let birthPlace = document.getElementById("birth-place");
+  let father = document.getElementById("father-name");
+  let mother = document.getElementById("mother-name");
+  let resAddress = document.getElementById("residental-address");
+  let city = document.getElementById("city");
+  let state = document.getElementById("state");
+  let pincode = document.getElementById("pincode");
+  let phone = document.getElementById("phone");
+  let fatherOccupation = document.getElementById("father-occupation");
+  let gurdian = document.getElementById("gurdian");
+  let nationality = document.getElementById("nationality");
+  let email = document.getElementById("email").value;
+		
+  let atSymbolIndex = email.indexOf("@");
+  let dotIndex = email.lastIndexOf(".");
+
+//Name Validation 
+
+
+if (name.value==''){
+    alert("Name cannot be empty");
+    return false;
+  }
+else if (/\d/.test(name.value)){
+    alert("Please enter a valid name and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(name.value)){
+    alert("Please enter a valid name and don't use special characters");
+    return false;
+  }
+else if(name.value.length<3 || name.value.length>40 ){
+    alert("Please enter a valid name [Length should be greater than 3 and less than 40]");
+    return false;
+}
+
+
+//Birthplace Validation
+
+else if (birthPlace.value==''){
+    alert("Birthplace cannot be empty");
+    return false;
+  }
+else if (/\d/.test(birthPlace.value)){
+    alert("Please enter a valid birthplace and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(birthPlace.value)){
+    alert("Please enter a valid Birth Place and don't use special characters");
+    return false;
+  }
+else if (birthPlace.value.length<3||birthPlace.value.length>35) {
+    alert("Please enter a valid birthplace [Length should be greater than 3 and less than 35]");
+    return false;
+  }
+
+
+// Father's Name Validation
+
+else if (father.value==''){
+    alert("Father's name cannot be empty");
+    return false;
+  }
+else if (/\d/.test(father.value)){
+    alert("Please enter your father's name and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(father.value)){
+    alert("Please enter your father's and don't use special characters");
+    return false;
+  }
+else if (father.value.length<3||father.value.length>35) {
+    alert("Please enter your father's name [Length should be greater than 3 and less than 35]");
+    return false;
+  }
+
+//Mother's Name Validation complete
+
+else if (mother.value==''){
+    alert("Mother's name cannot be empty");
+    return false;
+  }
+else if (/\d/.test(mother.value)){
+    alert("Please enter your mother's name and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(mother.value)){
+    alert("Please enter your mother's name and don't use special characters");
+    return false;
+  }
+else if (mother.value.length<3||mother.value.length>35) {
+    alert("Please enter your mother's name [Length should be greater than 3 and less than 35]");
+    return false;
+  }
+
+
+
+//Residence Address Validation complete
+
+else if (resAddress.value==''){
+    alert("Residence address cannot be empty");
+    return false;
+  }
+else if (/[^a-zA-Z0-9\s,.]/.test(resAddress.value)){
+    alert("Please enter your residence address and don't use special characters");
+    return false;
+  }
+else if (resAddress.value.length<5||resAddress.value.length>100) {
+    alert("Please enter your residence address [Length Should be greater than 5 and less than 100]");
+    return false;
+  }
+
+
+//City Validation
+
+else if (city.value==''){
+    alert("City cannot be empty");
+    return false;
+  }
+else if (/\d/.test(city.value)){
+    alert("Please enter a valid city and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(city.value)){
+    alert("Please enter a valid city and don't use special characters");
+    return false;
+  }
+else if (city.value.length<3||city.value.length>35) {
+    alert("Please enter a valid City [Length should be greater than 3 and less than 35]");
+    return false;
+  }
+
+
+
+//State Validation
+
+else if (state.value==''){
+    alert("State cannot be empty");
+    return false;
+  }
+else if (/\d/.test(state.value)){
+    alert("Please enter a valid state and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(state.value)){
+    alert("Please enter a valid state and don't use special characters");
+    return false;
+  }
+else if (state.value.length<3||state.value.length>35) {
+    alert("Please enter a valid state [Length should be greater than 3 and less than 35]");
+    return false;
+  }
+
+
+//Pincode Validation
+
+else if (pincode.value=='') {
+    alert("Pincode cannot be empty");
+    return false;
+  }
+else if (/[^0-9]/.test(pincode.value)){
+    alert("Please enter a valid pincode don't use characters or special characters");
+    return false;
+  }
+else if (pincode.value.length<6||pincode.value.length>6) {
+    alert("Please enter a valid pincode, your pincode is "+pincode.value.length+" digits");
+    return false;
+  }
+
+//Phone Number Validation complete
+
+else if (phone.value=='') {
+    alert("Phone number cannot be empty");
+    return false;
+  }
+else if (/[^0-9]/.test(phone.value)){
+    alert("Please enter a valid phone number don't use characters or special characters");
+    return false;
+  }
+else if (phone.value.length<10||phone.value.length>10) {
+    alert("Please enter a valid phone number, your phone number is "+phone.value.length+" digits");
+    return false;
+  }
+
+//Email Validation
+
+else if (email.length<1) {
+    alert("Email cannot be empty");
+    return false;
+  }
+else if(atSymbolIndex === -1 || dotIndex === -1 || dotIndex < atSymbolIndex + 2 || dotIndex + 1 >= email.length) {
+    alert("Please enter a valid email e.g.- example@example.com");
+    return false;
+ } 
+
+//Father Occupation Validation
+
+else if (fatherOccupation.value==''){
+    alert("Father's occupation cannot be empty");
+    return false;
+  }
+else if (/\d/.test(fatherOccupation.value)){
+    alert("Please enter your father's occupation and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(fatherOccupation.value)){
+    alert("Please enter your father's occupation and don't use special characters");
+    return false;
+  }
+else if (fatherOccupation.value.length<3||fatherOccupation.value.length>35) {
+    alert("Please enter your father's occupation [Length should be greater than 3 and less than 35]");
+    return false;
+  }
+
+//Guirdien Name Validation
+
+else if (gurdian.value==''){
+    alert("Guardian's name cannot be empty");
+    return false;
+  }
+else if (/\d/.test(gurdian.value)){
+    alert("Please enter your guardian's name and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(gurdian.value)){
+    alert("Please enter your guardian's name and don't use special characters");
+    return false;
+  }
+else if (gurdian.value.length<3||gurdian.value.length>35) {
+    alert("Please enter your guardian's name [Length should be greater than 3 and less than 35]");
+    return false;
+  }
+
+//Nationality Validation
+
+else if (nationality.value==''){
+    alert("Nationality cannot be empty");
+    return false;
+  }
+else if (/\d/.test(nationality.value)){
+    alert("Please enter your nationality and don't use numbers");
+    return false;
+  }
+else if (/[^a-zA-Z\s]/.test(nationality.value)){
+    alert("Please enter your nationality and don't use special characters");
+    return false;
+  }
+else if (nationality.value.length<3||nationality.value.length>35) {
+    alert("Please enter your nationality [Length should be greater than 3 and less than 35]");
+    return false;
+  }
+
+//Validation Complete Submit Form
+
+else{
+alert("The form has been successfully submitted");
+return true;
+}
+}
+</script>
+</td>
+</tr>
+<tbody>
+<tr><td id="bottom" colspan="2">
+<p id="bottom-text">Powered by <a href="https://www.google.com/" target="_blank">Google.com</a></p>
+</td></tr>
+</table>
+</body>
+</html>
